@@ -1,0 +1,155 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  background: #ccc;
+  width: 100%;
+}
+a,
+li {
+  list-style: none;
+  text-decoration: none;
+  color: #000000;
+}
+
+input {
+  outline: none;
+  border: 1px solid #ccc;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.header-list {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.product-list {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.product {
+  max-width: 320px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px #ccc;
+  /* transition: 2s ease; */
+}
+
+/* .product:hover{
+ background: #919191;
+ transition: 2s ease;
+} */
+.show {
+  width: 100%;
+  padding: 8px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.product-create {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0000005d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-2000px);
+  transition: 1s ease-in-out;
+  /* display: none; */
+}
+.active-form {
+  transform: translateY(0px);
+}
+.modal-form {
+  width: 40%;
+  height: 35%;
+  background: #fff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.cell-input {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cell-input > input {
+  padding: 8px 10px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+.create-product-btn {
+  width: 100%;
+  height: 48px;
+  border: none;
+  background: rgba(43, 72, 236, 0.726);
+  border-radius: 8px;
+  color: #fff;
+  font-size:18px;
+  cursor: pointer;
+}
+
+.notification{
+ position: fixed;
+ top: 10px;
+ right: 10px;
+ min-width: 300px;
+ padding: 20px 20px;
+ background: red;
+ border-radius: 10px;
+ color: #fff;
+ display: none;
+ animation: notified 3s ease;
+}
+@keyframes notified {
+ 0%{
+  transform: translateX(400px);
+ }
+ 50%{
+  transform: translateX(0px);
+ }
+ 100%{
+  transform: translateX(400px);
+ }
+}

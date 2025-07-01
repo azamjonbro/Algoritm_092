@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./style.css">
+ <meta  name="author" content="Azamjonbro">
+ <meta name="description" content="Ushbu  sayt online kitoblarni sotib olish yoki sotish uchun ishlatiladi.">
+ <meta  name="technology" content="technology: HTML, CSS, JS">
+ <title>Books app</title>
+</head>
+<body>
+ <header>
+  <nav class="container">
+   <a href="./index.html" class="logo">Logo</a>
+   <ul class="header-list">
+    <li class="item"><a href="#" id="create-product">Product Create</a></li>
+    <li class="item"><a href="#">link2</a></li>
+    <li class="item"><a href="#">link3</a></li>
+   </ul>
+  </nav>
+ </header>
+ <main>
+  <section class="product-section">
+   <div class="container">
+    <div class="product-list">
+     
+    </div>
+   </div>
+  </section>
+  <section class="product-create">
+   <div class="modal-form">
+    <h2>Mahsulot qo'shish</h2>
+    <form >
+     <div class="cell-input">
+      <label for="title">Title</label>
+      <input type="text" id="title" placeholder="Enter title" min="3" max="20" pattern="\g+A-Z/[1-9,#]" >
+     </div>
+     <div class="cell-input">
+      <label for="author">Author</label>
+      <input type="text" id="author" placeholder="Enter author" min="3" max="20" pattern="\g+A-Z/[1-9,#]" >
+     </div>
+     <div class="cell-input">
+      <label for="year">Year</label>
+      <input type="number" id="year" placeholder="Enter year book" min="3"  >
+     </div>
+     <div class="cell-input">
+      <label for="image">Image</label>
+      <input type="text" id="image" placeholder="Enter image address" min="3" max="20" pattern="\g+A-Z/[1-9,#]" >
+     </div>
+     <button class="create-product-btn">Create Product</button>
+    </form>
+   </div>
+  </section>
+  <div class="notification">
+   Default text
+  </div>
+ </main>
+ <script src="./main.js"></script>
+</body>
+</html>
