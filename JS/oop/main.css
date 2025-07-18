@@ -1,0 +1,16 @@
+:root{
+  --background-color: white;
+  --text-color: black;
+  --link-color: blue;
+}
+
+body.dark{
+  --background-color: black;
+  --text-color: white;
+  --link-color: lightblue;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}

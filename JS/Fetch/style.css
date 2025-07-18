@@ -1,0 +1,12 @@
+.product-list{
+ max-width: 1400px;
+ margin: 0 auto;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 20px;
+}
+.product-item{
+ width: 280px;
+ padding: 10px;
+ border: 1px solid #ccc;
+}
