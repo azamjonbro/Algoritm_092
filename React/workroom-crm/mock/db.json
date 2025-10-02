@@ -1,0 +1,12 @@
+{
+  "users": [
+    { "id": "u1", "name": "Azamjon", "email": "a@example.com", "role": "manager" },
+    { "id": "u2", "name": "Seadet", "email": "s@example.com", "role": "developer" }
+  ],
+  "workrooms": [
+    { "id": "w1", "name": "Frontend Team", "members": ["u1", "u2"], "createdAt": "2025-08-28" }
+  ],
+  "tasks": [
+    { "id": "t1", "workroomId": "w1", "title": "Login Page", "status": "in_progress", "assignee": "u2", "dueDate": "2025-09-05" }
+  ]
+}
